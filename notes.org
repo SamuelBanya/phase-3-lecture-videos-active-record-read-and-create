@@ -1,0 +1,25 @@
+Here are the commands that were run for this particular lesson:
+#+begin_src ruby
+a1 = Author.new()
+a1[:name] = "Bubbles"
+a1[:bio] = "is a shy cat"
+a1.save()
+#+end_src
+
+She then checked her results with these commands:
+#+begin_src ruby
+Author.all()
+Author.last()
+#+end_src
+
+She then used this command to create a new instance which will create a new instance AND save it to the database, aka '.create()':
+#+begin_src ruby
+Author.create(name:"Luke", bio:"is fluffy")
+
+Author.last()
+#+end_src
+
+She then created another instance with this command:
+#+begin_src ruby
+Author.create(name:"Bob", bio:"is a grump")
+#+end_src
